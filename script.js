@@ -6,7 +6,7 @@ window.onload = () => {
 function staticLoadPlaces() {
  return [
      {
-         name: 'Coin',
+         name: 'Box',
          location: {
              lat: -33.88002,
              lng: 151.19643,
@@ -22,12 +22,9 @@ function renderPlaces(places) {
      let latitude = place.location.lat;
      let longitude = place.location.lng;
 
-     let model = document.createElement('a-entity');
+     let model = document.createElement('a-box');
      model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-     model.setAttribute('gltf-model', './assets/coin/scene.gltf');
-     model.setAttribute('rotation', '0 180 0');
-     model.setAttribute('animation-mixer', '');
-     model.setAttribute('scale', '0.5 0.5 0.5');
+     model.setAttribute('material', 'color: yellow');
 
      model.addEventListener('loaded', () => {
          window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
