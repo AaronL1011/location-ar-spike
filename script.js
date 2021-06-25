@@ -8,8 +8,8 @@ function staticLoadPlaces() {
      {
          name: 'Coin',
          location: {
-             lat: -33.880535,
-             lng: 151.196568,
+             lat: -33.880092,
+             lng: 151.196492,
          }
      },
  ];
