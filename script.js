@@ -8,8 +8,8 @@ function staticLoadPlaces() {
      {
          name: 'Box',
          location: {
-             lat: -33.88002,
-             lng: 151.19643,
+             lat: -33.880094,
+             lng: 151.196337,
          }
      },
  ];
